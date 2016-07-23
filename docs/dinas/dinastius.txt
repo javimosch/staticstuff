@@ -1,0 +1,93 @@
+#NOMBRE DEL JUEGO
+Dinastius
+
+#DESCRIPCION
+es un scfi game
+es un rts por turnos
+
+#FEATURES
+- Podes administrar un planeta entero perteneciendo a una faccion, como un @PlaneMaster.
+- Podes viajar por cientos de sistemas solares y viajar por cada uno de sus planetas generados proceduralmente.
+- Podes comprar/mejorar naves espaciales
+- Podes comprar/mejorar vehiculos terrestres.
+- Podes combatir por tierra, mar, aire y espaco.
+
+#UNIVERSO HISTORIA Y BACKGROUND
+El mundo 2450 ans en el futuro.
+Existe el viaje intergalactico
+Existe la colonizacion de centenares de planetas
+No existe la vida alienigena en forma de una raza inteligente
+Existen virus alienigenas que destruyeron colonias creando una personas infectadas (similar a los reavens de firefly)
+
+#FACCIONES
+Existen los Rio   humanos-latinos/elite/tecnologia
+Existen los Sur   humanos-latinos/plebe/no-tecnologia
+Existen los Euro  humanos-blancos/elite/tecnologia
+Existen los Nasa  humanos-asiaticos/elite/tecnologia
+Existen los Nipal humanos-indues/plebe/tecnologia
+Existen los Cher  humanos-mutantes/plebe/no-tecnologia
+Existen los Gurza humanos-guerreros/plebe-minoria/no-tecnologia
+Existen los Mandi humanos-sabios/elite/no-tecnologia
+Existen los Linda humanos-sabios/elite/tecnologia
+Existen los Rivs  humanos-mutantes/plebe/tecnologia/siempre-enemigos
+
+#RANGOS
+
+- Traveller
+			Como traveller, controlas a un avatar y podes hacer lo que quieras. Es un sandbox.
+- PlanetMaster
+			Como planet master, controlas inicialmente un planeta y perteneces a una faccion, y
+			podes colonizar y enfrentarte a otras razas. Tu objetivo es que tu faccion controle
+			la mayor cantidad de @Artefactos
+
+#ARTEFACTOS
+Son piezas esparcidas por toda la galaxia de origen desconocido pero que son utilizadas por las facciones
+para generar enormes cantidades de @Energia, el recurso mas preciado en el futuro.
+
+
+#RECURSOS
+- Acerit	(Similar al acero)
+- Maderus	(Similar a la madera)
+- energia 	(Similar a la electricidad)
+- Plastic	(Similar al plastico)
+- Stonen   	(Similar a la piedra)
+- Carbono	(Acero reforzado)
+
+#RECURSOS - ENERGIA
+La energia es el recurso mas apreciado. Todo funciona con energia.
+El combustible es energia.
+Las estaciones espaciales y todas las naves se mantienen con energia.
+
+
+
+#MAPA GALACTICO (SISTEMA SOLAR)
+la vista de juego inicial es sistema solar
+solo se puede ver el planeta con el que empezas
+cuando se descubre un nuevo planeta este se puede ver en el sistema solar actual
+cuando se descubre las coordenadas de un nuevo sistema solar, se puede saltar desde un jump gate
+el mapa galactico esta divido en sectores al igual que el mapa planetario.
+los planetas son estaticos
+las bases piratas son procedurales
+
+
+#ESTACIONES 
+se puede ver una lista de estaciones espaciales orbitando un planeta
+se puede acceder a las estaciones espaciales
+Se puede hacer docking en estaciones espaciales.
+Las estaciones espaciales se dividen en procedurales y estaticas segun su dimension
+
+#ESTACIONES - ESTATICAS
+Estas estaciones tiene un numero limitado de locaciones a las que se puede acceder.
+
+#MAPA PLANETARIO
+se puede acceder al planeta
+el planeta esta dividio en sectores formando una especie de tablero excel
+el tablero se genera inicialmente segun la cantidad de kilometros cuadrados que posee el planeta.
+
+#MAPA PLANETARIO - SECTOR
+cada sector descubierto, da lugar a la generacion de un escenario. Una ves generado, este es persistente.
+cada sector tiene un diametro de un kilometro por un kilometro.
+
+#JUMP GATE
+es una estructura que orbita en algunos planetas que permite el salto a sistemas solares en la misma o en otra galaxia.
+

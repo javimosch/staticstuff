@@ -1,0 +1,67 @@
+{
+  "name": "staticstuff",
+  "version": "1.0.0",
+  "description": "staticstuff (multisite dev tool, realtime compilation, handlebars, ftp deploy)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node lib/he.tests.js",
+    "deploy": "node ./lib/he.deploy.js --now",
+    "install-safe": "npm i --save $1 --no-bin-links",
+    "commit": "git add . | git commit --allow-empty-message --all -m",
+    "push": "git push $1 master",
+    "serve": "serve -p 8080",
+    "server": "heroku local web",
+    "build": "PROD=1 node index.js",
+    "dev": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run start\" \"npm run server\"",
+    "gitlog": "git log --graph --pretty=oneline --abbrev-commit",
+    "gab-dev": "app=getabiker PROD=0 npm run dev",
+    "gab-prod": "app=getabiker PROD=1 npm start; sh install-prod.sh getabiker",
+    "ssg-dev": "app=ssgui ENABLE_WS=1 PROD=0 npm run dev",
+    "ba-prod": "app=misitioba PROD=1 npm start",
+    "ba-dev": "app=misitioba PROD=0 npm run dev",
+    "ba-watch": "app=misitioba PROD=0 npm run start",
+    "rich-watch": "app=rich PROD=0 npm run start",
+    "clear": "node lib/he.task.clear.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javimosch/handlexpress.git"
+  },
+  "keywords": [
+    "handlebars",
+    "express",
+    "gui"
+  ],
+  "author": "Javimosch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javimosch/handlexpress/issues"
+  },
+  "homepage": "https://github.com/javimosch/handlexpress#readme",
+  "dependencies": {
+    "angularfire": "^1.2.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "btoa": "^1.1.2",
+    "concurrently": "^2.0.0",
+    "del": "^2.2.0",
+    "directory-tree": "^1.0.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "firebase": "latest",
+    "ftp-deploy": "^1.1.0",
+    "gulp-watch": "^4.3.5",
+    "handlebars": "^4.0.5",
+    "http": "0.0.0",
+    "minify-content": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "oauth2-server": "^2.4.1",
+    "read-dir-files": "^0.1.1",
+    "sander": "^0.5.1",
+    "socket.io": "^1.4.6",
+    "urlencode": "^1.1.0",
+    "watch": "^0.17.1",
+    "yargs": "^4.7.1"
+  }
+}

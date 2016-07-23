@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    (function() {
+        /*global firebase*/
+        /*global localStorage*/
+        var isDevEnv = function() {
+            return window.location.origin.indexOf('maerp-javoche') !== -1;
+        }
+        if (!isDevEnv()) return;
+        console.info('live-sync-enabled');
+        var config = {
+            apiKey: "AIzaSyD-bjaRCpVkEYnnLhdmfrkujMYe9PP46gQ",
+            authDomain: "project-8364615376455036555.firebaseapp.com",
+            databaseURL: "https://project-8364615376455036555.firebaseio.com",
+            storageBucket: "",
+        };
+        var ref = firebase.initializeApp(config, 'staticstuff-reload').database().ref('{{signalName}}/signals/reload');
+        var counter = localStorage['livesync'] && parseInt(localStorage['livesync']) || 0;
+        ref.on('value', function(snap) {
+            if (snap.val() != counter) {
+                if (snap.val() == null || snap.val() == undefined) return; //nothing happen yet
+                localStorage['livesync'] = snap.val().toString();
+                //console.log(snap.val(), counter, 'reloading');
+                console.log('live-sync-reloading');
+                window.location.reload();
+            }
+            else {
+                console.log('live-sync-waiting');
+            }
+        });
+    })();
+</script>
