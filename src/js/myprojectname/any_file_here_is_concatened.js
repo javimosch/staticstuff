@@ -1,0 +1,1 @@
+console.log('hi, I was bundled to app.js')
