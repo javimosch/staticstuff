@@ -2,6 +2,8 @@
 
 STATICSTUFF let you develop static web sites and web applications faster.
 
+## DEPRECATED WARNING: Use instead https://github.com/javimosch/montpesites
+
 ### GITLAB
 
 If you are watching this in GITLAB, your are watching the last version, who includes some of my projects.
